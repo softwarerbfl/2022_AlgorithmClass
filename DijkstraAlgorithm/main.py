@@ -1,7 +1,7 @@
 import math
 inf=math.inf #무한대값
 
-def dijkatra(n, w, visited):
+def dijkstra(n, w, visited):
     vnear=0
 
     #인덱스의 값을 vertex의 인덱스와 맞추기 위해 n+1개의 배열로 선언
@@ -92,9 +92,9 @@ visited3={
     3:[False,False,False,False,False],
     4:[False,False,False,False,False]
 }
-dijkatra(5,w1,visited1)
+dijkstra(5,w1,visited1)
 printEdge(visited1,5)
-dijkatra(6,w2,visited2)
+dijkstra(6,w2,visited2)
 printEdge(visited2,6)
-dijkatra(4,w3,visited3)
+dijkstra(4,w3,visited3)
 printEdge(visited3,4)
