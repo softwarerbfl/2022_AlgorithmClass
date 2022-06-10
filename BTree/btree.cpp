@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	int value;
-	int n = 50000; //삽입할 원소의 개수
+	int n = 1000; //삽입할 원소의 개수
 	BTree t(5);
 	clock_t start, finish;
 	double result=0.0;
@@ -30,7 +30,7 @@ int main() {
 	}
 
 	cout << "총 걸린 시간: " << result << "초\n";
-	//cout << "Constructed tree : "; //정렬된 것을 확인할 수 있다.
+	//cout << "Constructed tree : ";
 	//t.traverse();
 	return 0;
 }
