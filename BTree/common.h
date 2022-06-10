@@ -17,7 +17,6 @@ public:
 	void split(int i, Node* y);
 	void traverse();
 };
-
 class BTree
 {
 	Node* root;
@@ -28,15 +27,13 @@ public:
 		root = NULL;
 		t = value;
 	}
-	Node* search(int k)
+	Node* search(int value)
 	{
-		return (root == NULL) ? NULL : root->search(k);
+		return (root == NULL) ? NULL : root->search(value);
 	}
-	void insert(int k);
+	void insert(int value);
 	void traverse()
 	{
 		if (root != NULL) root->traverse();
 	}
-	
-	
 };
